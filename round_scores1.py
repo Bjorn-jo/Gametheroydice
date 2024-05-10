@@ -4,6 +4,9 @@ from roller import roll_dice
 from player_A import player_A_strat
 from player_B import player_B_strat
 from player_C import player_C_strat
+from player_D import player_D_strat
+from player_E import player_E_strat
+
 import numpy as np
 def round_scores():
     total=0
@@ -11,7 +14,9 @@ def round_scores():
     player_A_in=1
     player_B_in=1
     player_C_in=1
-    all_players=[player_A_in,player_B_in,player_C_in]
+    player_D_in=1
+    player_E_in=1
+    all_players=[player_A_in,player_B_in,player_C_in,player_D_in,player_E_in]
     all_players_round_score=np.zeros((len(all_players),1))
 
     while sum(all_players)>.1:
@@ -63,8 +68,20 @@ def round_scores():
             if player_C_in == 0:
                 all_players_round_score[2]=total
                 #print('player a has scored')
+        if player_D_in ==1:
+            #if current player is still in checks to see if they are still in after roll
+            player_D_in=player_D_strat(total)
+            if player_D_in == 0:
+                all_players_round_score[3]=total
+                #print('player a has scored')
+        if player_E_in ==1:
+            #if current player is still in checks to see if they are still in after roll
+            player_E_in=player_E_strat(total)
+            if player_E_in == 0:
+                all_players_round_score[4]=total
+                #print('player a has scored')
         #update number of players
-        all_players=[player_A_in,player_B_in,player_C_in]
+        all_players=[player_A_in,player_B_in,player_C_in,player_D_in,player_E_in]
         
 
     #print('the round is over')

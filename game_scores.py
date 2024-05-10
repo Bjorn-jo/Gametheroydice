@@ -10,7 +10,7 @@ def game_scores():
         for player in range(number_of_players):
             total_score[player]=total_score[player]+current_round_score[player]
     #print("the total scores were",total_score)
-    winner=np.argmax(total_score)
+    #winner=np.argmax(total_score)
     #print("the winner is player", winner+1)
     #if winner==0:
     #    print('the winning strat was taking anything over 20')
@@ -19,4 +19,4 @@ def game_scores():
     #elif winner==2:
     #    print('the winning strat was taking anything over 100')
     return(total_score)
-        
+#game_scores()

@@ -1,7 +1,7 @@
 #status of player C
 
 def player_C_strat(total):
-    if total>100:
+    if total>500:
         #means player scores for that round
         return(0)
     else:
