@@ -22,7 +22,8 @@ for player in range(len(total_games_won)):
 print(number_of_games_won)
 
 def create_bar_graph(data):
-    x=(   '20.',   '50.',   '80.',   '100.',   '150.',  '200.',  '300.',  '500.', '800.', '1600.')
+    #       a       b           c       d           e           f           g                       h                       i                          j 
+    x=(   '50.',   '100.',   '200.',   '75.',   '800.',  '1/6 chance.',  '1/12 chance.',  'stops after round 6', 'stops after round 12.', 'lastplayerrolling.')
     #x=np.zeros(len(data))
     #x[0]=50
     #for counti in range(1,len(total_games_won)):
