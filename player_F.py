@@ -1,7 +1,5 @@
-#status of player b
-
-def player_B_strat(total):
-    if total>50:
+def player_F_strat(total):
+    if total>200:
         #means player scores for that round
         return(0)
     else:
