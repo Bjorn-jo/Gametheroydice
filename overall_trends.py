@@ -1,7 +1,7 @@
 from game_scores import game_scores
 import numpy as np
 import matplotlib.pyplot as plt
-number_of_games=100
+number_of_games=10000
 number_of_players=len(game_scores())
 
 
@@ -27,10 +27,10 @@ def create_bar_graph(data):
     #x[0]=50
     #for counti in range(1,len(total_games_won)):
     #    x[counti]=x[counti-1]*2
-    print(x)
+    #print(x)
     plt.bar(x, data)
-    plt.xlabel('score when total is greater than')
+    plt.xlabel('write score when total is greater than x axis')
     plt.ylabel('number of games won')
-    plt.title('Bar Graph')
+    plt.title('odds of winning stupid dice game')
     plt.show()
 create_bar_graph(number_of_games_won)
